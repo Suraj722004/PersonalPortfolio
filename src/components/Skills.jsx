@@ -5,6 +5,7 @@ import htmlLogo from "./images/html.png";
 import cssLogo from "./images/CSS-Logo.png";
 import jsLogo from "./images/js.png";
 import reactLogo from "./images/React.webp";
+import nodelogo from "./images/node.png"
 import tsLogo from "./images/ts.png";
 import figmaLogo from "./images/figma.png";
 import javaLogo from "./images/java.png";
@@ -26,6 +27,7 @@ const skills = [
   { name: "CSS", logo: cssLogo, level: "Intermediate", count: 70 },
   { name: "JAVASCRIPT", logo: jsLogo, level: "Intermediate", count: 70 },
   { name: "REACT", logo: reactLogo, level: "Intermediate", count: 60 },
+  {name: "NODE.JS", logo: nodelogo, level:"Beginner", count:50},
   { name: "TAILWIND CSS", logo: tsLogo, level: "Beginner", count: 50 },
   { name: "FIGMA", logo: figmaLogo, level: "Beginner", count: 40 },
   { name: "JAVA", logo: javaLogo, level: "Beginner", count: 40 },
