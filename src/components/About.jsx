@@ -55,7 +55,7 @@ const AboutSection = () => {
             className="flex justify-center"
           >
             <div className="relative">
-              <div className="w-64 h-[80px] md:w-80 md:h-80 rounded-md overflow-hidden">
+              <div className="w-40 h-40 md:w-80 md:h-80 rounded-md overflow-hidden">
                 <motion.img
                   src={ mylogo }
                   alt="Suraj Sudhir Baghel"

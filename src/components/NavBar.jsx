@@ -34,7 +34,7 @@ const NavBar = () => {
   return (
     <header 
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/90 shadow-md backdrop-blur-sm py-4" : "bg-transparent py-6"
+        scrolled ? "bg-blue-400 shadow-md backdrop-blur-sm py-4 hover:bg-aqua" : "bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -47,21 +47,21 @@ const NavBar = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-blue-800 text-lg mt-1 hover:text-highlight transition-colors duration-300"
+              className="text-blue-800 text-lg mt-1 hover:text-aqua transition-colors duration-300"
             >
               {link.name}
             </a>
           ))}
           <button 
             onClick={openResume} 
-            className="bg-highlight text-navy hover:bg-highlight/80 px-4 py-2 rounded-lg"
+            className="bg-highlight text-navy hover:bg-aqua px-4 py-2 rounded-lg"
           >
             Resume
           </button>
         </nav>
 
         <button
-          className="md:hidden text-navy focus:outline-none"
+          className="md:hidden text-white focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -70,13 +70,13 @@ const NavBar = () => {
       </div>
 
       {isOpen && (
-        <nav className="md:hidden bg-white py-4 px-6 shadow-lg absolute w-full">
+        <nav className="md:hidden bg-white py-4 px-6 shadow-lg absolute w-full left-0 top-full">
           <div className="flex flex-col space-y-4">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-navy py-2 hover:text-highlight transition-colors duration-300"
+                className="text-navy py-2 hover:text-aqua transition-colors duration-300"
                 onClick={toggleMenu}
               >
                 {link.name}
@@ -84,7 +84,7 @@ const NavBar = () => {
             ))}
             <button 
               onClick={openResume} 
-              className="bg-highlight text-navy hover:bg-highlight/80 w-full py-2 rounded-lg"
+              className="bg-highlight text-navy hover:bg-aqua w-full py-2 rounded-lg"
             >
               Resume
             </button>
